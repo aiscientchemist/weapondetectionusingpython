@@ -18,6 +18,7 @@ while True:
     if len(gun) > 0:
         gun_exist = True
     for (x, y, w, h) in gun:
+
         frame = cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
         roi_gray = gray[y:y + h, x: x+w]
         roi_color = frame[y:y+h, x: x+w]
